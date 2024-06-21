@@ -3,9 +3,6 @@ services:
   # Nginx Service
   nginx:
     image: nginx:1.25.3
-    ports:
-      - 80:80
-      - 443:443
     volumes:
       - ./src:/var/www/php
       - ./.docker/nginx/conf.d:/etc/nginx/conf.d
